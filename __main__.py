@@ -14,7 +14,6 @@ from appclasses import Appcontainer, Appconfig, Appservice, Appingress
 render_provider = Provider('k8s-yaml-renderer',
     render_yaml_to_directory='yaml')
 
-# Create an NGINX Deployment and load-balanced Service that use it.
 labels = { 'app': 'nginx' }
 config = Appconfig()
 containerspec = Appcontainer()
